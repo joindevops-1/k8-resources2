@@ -13,6 +13,8 @@ spec:
   csi:
     driver: efs.csi.aws.com
     volumeHandle: fs-05db4f7a661a60069
+    volumeAttributes:
+      path: "/mysql"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
