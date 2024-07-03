@@ -12,10 +12,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: fs-05db4f7a661a60069
-    volumeAttributes:
-      path: "/mysql"
-      accesspoint: "fsap-059be5f31a8c1708d"
+    volumeHandle: fs-05db4f7a661a60069:/mysql
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
